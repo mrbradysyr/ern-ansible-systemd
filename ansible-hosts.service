@@ -1,0 +1,8 @@
+[Unit]
+Description=Hosts File Update Service
+ConditionFileNotEmpty=/ansible/staging/hosts
+
+[Service]
+ExecStartPre=/bin/grep -Pq "^127.0.0.1\s+localhost" /ansible/staging/hosts
+ExecStart=/bin/cp -f /ansible/staging/hosts /etc/hosts
+

@@ -1,0 +1,8 @@
+[Unit]
+Description=Slurm Config Update Service
+ConditionFileNotEmpty=/ansible/staging/slurm.conf
+
+[Service]
+ExecStart=/bin/cp -f /ansible/staging/slurm.conf /etc/slurm/slurm.conf
+ExecStart=/bin/systemctl restart slurmd.service
+

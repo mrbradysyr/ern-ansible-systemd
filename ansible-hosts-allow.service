@@ -1,0 +1,7 @@
+[Unit]
+Description=Hosts.allow File Update Service
+ConditionFileNotEmpty=/ansible/staging/hosts.allow
+
+[Service]
+ExecStart=/bin/cp -f /ansible/staging/hosts.allow /etc/hosts.allow
+

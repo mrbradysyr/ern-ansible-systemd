@@ -1,0 +1,9 @@
+[Unit] 
+Description=Ansible slurm.conf file monitor
+
+[Path]
+PathModified=/ansible/staging/slurm.conf
+
+[Install]
+WantedBy=multi-user.target
+

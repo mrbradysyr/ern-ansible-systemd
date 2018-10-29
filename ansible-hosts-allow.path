@@ -1,0 +1,9 @@
+[Unit] 
+Description=Ansible hosts.allow file monitor
+
+[Path]
+PathModified=/ansible/staging/hosts.allow
+
+[Install]
+WantedBy=multi-user.target
+
