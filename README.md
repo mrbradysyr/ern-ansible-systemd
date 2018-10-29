@@ -4,10 +4,10 @@ ERN Ansible - Systemd configuration for clients
 
 ## Install
 
-Places these .path and .service files into /etc/systemd/system
+Place the .path and .service files into /etc/systemd/system
 
 ## Enable
 
-Use systemctl enable to active paths. Service files are run when paths are activated
+Use "systemctl enable" to active paths. Service files are run when paths are activated
 
 
